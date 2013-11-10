@@ -3,7 +3,7 @@ Nicaragua Driving
 
 An racing game in HTML5 and Javascript
 
- * [play the game](http://doap.com/projects/racer/v4.final.html)
+ * [play the game](http://doap.com/projects/nicaragua-driving/v4.final.html)
 
 4 levels:
 
