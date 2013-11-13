@@ -1,7 +1,7 @@
 //=========================================================================
 // minimalist DOM helpers
 //=========================================================================
-
+lanes=1;
 var Dom = {
 
   get:  function(id)                     { return ((id instanceof HTMLElement) || (id === document)) ? id : document.getElementById(id); },
@@ -333,7 +333,7 @@ var Render = {
     }
   },
 
-  rumbleWidth:     function(projectedRoadWidth, lanes) { return projectedRoadWidth/Math.max(6,  2*lanes); },
+  rumbleWidth:     function(projectedRoadWidth, anes) { return projectedRoadWidth/Math.max(6,  2*lanes); },
   laneMarkerWidth: function(projectedRoadWidth, lanes) { return projectedRoadWidth/Math.max(32, 8*lanes); }
 
 }
@@ -357,8 +357,10 @@ var COLORS = {
   SKY:  '#72D7EE',
   TREE: '#005108',
   FOG:  '#005108',
-  LIGHT:  { road: '#6B6B6B', grass: '#10AA10', rumble: '#555555', lane: '#CCCCCC'  },
-  DARK:   { road: '#696969', grass: '#009A00', rumble: '#BBBBBB'                   },
+  LIGHT:  { road: '#6B6B6B', grass: '#10AA10', rumble: 'black', lane: '#CCCCCC'  },
+  //LIGHT:  { road: '#6B6B6B', grass: '#10AA10', rumble: '#555555', lane: '#CCCCCC'  },
+  DARK:   { road: '#696969', grass: '#009A00', rumble: 'red'                   },
+  //DARK:   { road: '#696969', grass: '#009A00', rumble: '#BBBBBB'                   },
   START:  { road: 'white',   grass: 'white',   rumble: 'white'                     },
   FINISH: { road: 'black',   grass: 'black',   rumble: 'black'                     }
 };
