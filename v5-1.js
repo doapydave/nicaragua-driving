@@ -2,14 +2,6 @@
 // minimalist DOM helpers
 //=========================================================================
 lanes=1;
-resolution="low";
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    var keyCode = evt.keyCode;
-    if (keyCode >= 37 && keyCode <= 40) {
-        return false;
-    }
-};
 var Dom = {
 
   get:  function(id)                     { return ((id instanceof HTMLElement) || (id === document)) ? id : document.getElementById(id); },
